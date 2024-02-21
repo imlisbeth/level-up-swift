@@ -56,6 +56,13 @@ hasAnyMatches(list: numbers, condition: lessThanTen)
 //   [20, 19, 7, 12] => true because of the 7
 //   [20, 19, 12]    => false
 
+func betweenOneAndTen(number: Int) -> Bool {
+    return number >= 1 && number <= 10
+}
+
+// hasAnyMatches(list: numbers, condition: betweenOneAndTen(number:))
+hasAnyMatches(list: numbers, condition: betweenOneAndTen)
+
 //
 // Links that help
 //
