@@ -15,6 +15,11 @@ Write a function named min2 that takes two Int values, a and b, and returns the 
  > 1
 */
 
+func min(_ a: Int, _ b: Int) -> Int {
+    return a < b ? a : b
+}
+
+min(3, 1)
 
 /*
 🕹 Last Digit
@@ -25,6 +30,11 @@ Write a function that takes an Int and returns it’s last digit. Name the funct
  > 5
  */
 
+func lastDigit(_ number: Int) -> Int {
+    return number % 10
+}
+
+lastDigit(12345)
 
 /*
 🕹 First Numbers
@@ -34,6 +44,18 @@ Write a function named first that takes an Int named N and returns an array with
  > first(3)
  > [1, 2, 3]
 */
+
+let intArray = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+
+func first(_ N: Int) -> [Int] {
+    var numbers = [Int]()
+    for number in 1...N {
+        numbers.append(number)
+    }
+    return numbers
+}
+
+first(3)
 
 /*
 🕹 Reverse
