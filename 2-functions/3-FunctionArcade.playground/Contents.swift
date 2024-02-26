@@ -66,6 +66,11 @@ Write a function named reverse that takes an array of integers named numbers as 
  > [3, 2, 1]
  */
 
+func reverse(numbers: [Int]) -> [Int] {
+    return numbers.reversed()
+}
+
+reverse(numbers: [1, 2, 3])
 
 /*
 🕹 Sum
@@ -75,3 +80,13 @@ Write a function named sum that takes an array of integers and returns their sum
  > sum(of: [1, 2, 3])
  > 6
  */
+
+func sum(of numbers: [Int]) -> Int {
+    var sum = 0
+    for number in numbers {
+        sum += number
+    }
+    return sum
+}
+
+sum(of: [1, 2, 3])
