@@ -45,14 +45,24 @@ Write a function named first that takes an Int named N and returns an array with
  > [1, 2, 3]
 */
 
-let intArray = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+let numbers = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+
+//func first(_ N: Int) -> [Int] {
+//    var temp = [Int]()
+//    var count = 0
+//    while temp.count < N {
+//        temp.append(numbers[count])
+//        count += 1
+//    }
+//    return temp
+//}
 
 func first(_ N: Int) -> [Int] {
-    var numbers = [Int]()
-    for number in 1...N {
-        numbers.append(number)
+    var nArr = [Int]()
+    for number in 0..<N {
+        nArr.append(numbers[number])
     }
-    return numbers
+    return nArr
 }
 
 first(3)
